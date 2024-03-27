@@ -11,13 +11,16 @@ public class DivideWithoutDivisionOperator {
             System.out.println("Invalid Number");
         }
 
-        System.out.print(num3 +" divide by "+num4 +" is: ");
+
+        System.out.print("When "+ num3 +" is divided by "+num4 +", the result is: " );
+
         int count =0;
-        while(num3 >= num4) {   ///0   3
-            num3 -= num4;    // 0
-            count++;   // 3
+        while(num3 >= num4) {
+            num3 -= num4;
+            count++;
         }
-        System.out.println(count+" and remainder is "+num3);
+
+        System.out.println( count+" and remainder is "+num3);
     }
 
 }
