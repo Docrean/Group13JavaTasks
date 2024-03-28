@@ -2,6 +2,8 @@ package Brandon.Wk1;
 
 public class Tasks {
 
+    //Task1
+
     public static void main(String[] args) {
 
         int num = 5; //declare 5 and 6 int num variables
@@ -17,6 +19,9 @@ public class Tasks {
                 Indentify(6)->"even"
      */
 
+
+
+        //Task2
 
 
 
