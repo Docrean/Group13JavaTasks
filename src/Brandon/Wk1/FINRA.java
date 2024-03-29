@@ -13,18 +13,18 @@ public class FINRA {
     //1. Write a method which prints out the numbers from 1 to 30 but for numbers which
     //are a multiple of 3 print "FIN" instead of the number.
 
-    public static void FINRA_1() {
-        String result = "";
-        for(int i=1; i <= 30; i++) {
-            if(i % 5==0 && i %3 ==0)
-                result += "FINRA ";
-            else if(i%5 == 0)
+    public static void FINRA_1() { //Create the FINRA_1 static method
+        String result = "";         //set the string result to print the integer if not divisible by 5 or 3.
+        for(int i=1; i <= 30; i++) {  //set the for loop that iterates from 1 to 30 to check values
+            if(i % 5==0 && i %3 ==0)   //if condition to check if values between 1 and 30 are multiples of 5 and 3
+                result += "FINRA ";    //if values divisible by 5 and 3, it adds the print result "FINRA".
+            else if(i%5 == 0)          //if values divisible by 5, it adds the print result "RA".
                 result += "RA ";
-            else if(i%3==0)
+            else if(i%3==0)             //if values divisible by 3, it adds the print result "FIN"
                 result+="FIN ";
             else
-                result += i+" ";
-        }
+                result += i+" ";        //if values are not divisible by 3 or 5, it adds the integer itself as a string
+        }                               //to the result string. Code then prints the result string.
         System.out.println(result);
 
 
@@ -46,15 +46,16 @@ public class FINRA {
                 After the for loop is completed, the result variable is printed to the console.
              */
 
-    public static void FINRA_2(){
-        for (int i = 1; i < 30; i++) {
-            String result = "";
+    public static void FINRA_2(){   //Create the FINRA_2 static method
+        for (int i = 1; i < 30; i++) { //set the for loop that iterates from 1 to 30 to check values
+            String result = " "; //set the string result to print the integer if not divisible by 5 or 3.
             result += (i % 5 == 0 && i % 3 ==0) ? "FINRA" : (i % 5 == 0) ? "RA "
-                    :(i % 3 == 0) ? "FIN" : i + " ";
+                    :(i % 3 == 0) ? "FIN" : i + " "; //ternary structure (single line if else statements)
             System.out.println(result);
 
-            //This is the same code as before. This code set utilizes ternary structure to check the same conditions and
-            //returns the result.
+            //This code is similar to the first FINRA function except that it uses ternary operators to replace some
+            //of the if-else statements. This can make the code more concise and easier to read but it may also make it
+            // harder to understand what the code is doing.
         }
     }
 
