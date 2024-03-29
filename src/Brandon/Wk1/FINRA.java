@@ -50,7 +50,9 @@ public class FINRA {
         for (int i = 1; i < 30; i++) { //set the for loop that iterates from 1 to 30 to check values
             String result = " "; //set the string result to print the integer if not divisible by 5 or 3.
             result += (i % 5 == 0 && i % 3 ==0) ? "FINRA" : (i % 5 == 0) ? "RA "
-                    :(i % 3 == 0) ? "FIN" : i + " "; //ternary structure (single line if else statements)
+                    :(i % 3 == 0) ? "FIN" : i + " "; //ternary structure (single line if else statements). Instead of
+                                                     //writing multi line statements use the ternary to write as one
+                                                     //one statement.
             System.out.println(result);
 
             //This code is similar to the first FINRA function except that it uses ternary operators to replace some
@@ -60,7 +62,17 @@ public class FINRA {
     }
 
 
-    public static void FINRA_3(){
+    public static void FINRA_3(){   //Create the FINRA_2 static method
+          String[] myarr = new String[30];     //set the string array variable with an array length of 30.
+
+        for (int i = 0; i <= 29; i++) { //Set the array to iterate and loop integers 1 to 30
+            myarr[i] = " " + (i + 1);
+
+            for (int j = 0; j <myarr.length ; j++) { //set the foor loop to iterate integers 1 to 30
+
+            }
+        }
+
 
     }
 

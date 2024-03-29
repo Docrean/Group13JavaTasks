@@ -37,18 +37,18 @@ public class Finra {
     public static void FINRA_3() {
         String[] myarr= new String[30];
 
-        for( int i=0; i <= 29; i++ )
-            myarr[i] = ""+(i+1);
+        for( int i=0; i <= 29; i++ ) //Set the for loop to iterate from 0 to 30
+            myarr[i] = ""+(i+1); //create array with a space to iterate +1
 
         for(int j=0; j<myarr.length; j++) {
-            if (Integer.valueOf(myarr[j]) % 3 == 0 && Integer.valueOf(myarr[j]) % 5 == 0)
-                myarr[j] = "FINRA";
+            if (Integer.valueOf(myarr[j]) % 3 == 0 && Integer.valueOf(myarr[j]) % 5 == 0) //checks the array condition
+                myarr[j] = "FINRA"; //if integer condition is divisible by both than FINRA prints
             else if (Integer.valueOf(myarr[j]) % 3 == 0)
-                myarr[j] = "FIN";
+                myarr[j] = "FIN"; //if integer condition is divisible by 3 than FIN prints
             else if (Integer.valueOf(myarr[j]) % 5 == 0)
-                myarr[j] = "RA";
+                myarr[j] = "RA"; //if integer condition is divisible by 5 than RA prints
         }
-        System.out.println(Arrays.deepToString(myarr));
+        System.out.println(Arrays.deepToString(myarr)); //print the array using the deepTostring
     }
 
 
