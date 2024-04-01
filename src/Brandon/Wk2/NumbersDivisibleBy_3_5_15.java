@@ -1,15 +1,34 @@
 package Brandon.Wk2;
 
 
+import java.util.Queue;
+
 public class NumbersDivisibleBy_3_5_15 {
 
     public static void main(String[] args) {
 
-        for (int i = 0; i <= 100; i++) {
+        String result3, result5, result15;
+        result3 = "Divisible by 3";
+        result5 = "Divisible by 5";
+        result15 = "Divisible by 15";
 
-            }
+        for (int i = 1; i <= 100; i++) {
+           if (i % 3 == 0 && i % 5 == 0 && i % 15 == 0){
+               result15 += " " + i;
+           } else if (i % 3 == 0 && i % 15!= 0){
+                result3 += " " + i;
+           } else if (i % 5 == 0 && i % 15!= 0){
+                result5 += " " + i;
+           }
+
         }
+
+        System.out.println(result15);
+        System.out.println(result5);
+        System.out.println(result3);
+    }
 }
+
 
 
 
