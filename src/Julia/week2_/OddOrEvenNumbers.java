@@ -19,7 +19,6 @@ public class OddOrEvenNumbers {
         System.out.println(number + " is an even number: " + isEven);
         System.out.println(number + " is an odd number: " + isOdd);
 
-
     }
 
 }
