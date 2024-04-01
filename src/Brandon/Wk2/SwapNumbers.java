@@ -6,13 +6,16 @@ public class SwapNumbers {
 
     public static void main(String[] args) {
 
-        int num1 = 10;
-        int num2 = 20;
+      int a = 10, b = 20;
 
-        num1 = num2; //num1 now 20
+      a = a + b;
+      b = a - b;
+      a = a - b;
+
+        System.out.println(a);
+        System.out.println(b);
 
 
-        System.out.println(num1);
-        System.out.println(num2);
+
     }
 }
