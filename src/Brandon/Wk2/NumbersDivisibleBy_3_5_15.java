@@ -8,7 +8,7 @@ public class NumbersDivisibleBy_3_5_15 {
     public static void main(String[] args) {
 
         String result3, result5, result15;
-        result3 = "Divisible by 3";
+        result3 = "Divisible by 3"; //create the string variables to store the results of each condition
         result5 = "Divisible by 5";
         result15 = "Divisible by 15";
 
@@ -23,7 +23,7 @@ public class NumbersDivisibleBy_3_5_15 {
 
         }
 
-        System.out.println(result15);
+        System.out.println(result15); //print statements outside of the loop so as to not print after each iteration.
         System.out.println(result5);
         System.out.println(result3);
     }
