@@ -43,7 +43,7 @@ public class FINRA {
                to the result variable. If the number is only divisible by 3, it adds "FIN" to the result variable.
                If the number is not divisible by 5 or 3, it adds the current number as a string to the result variable.
 
-                After the for loop is completed, the result variable is printed to the console.
+                After the for loop is completed, the result variable is printed to the console!
              */
 
     public static void FINRA_2(){   //Create the FINRA_2 static method
